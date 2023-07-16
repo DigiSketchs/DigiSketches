@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'merriweather' ,serif;
+}
+h1 {
+    color: #1D5B79;
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    margin-top: 70px ;
+
+}
+
+
+h2 {
+    color: #1D5B79;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: 'merriweather' ,serif;
+}
+.upper-container {
+    background-color: #B4E4FF; 
+}
+
+.uppercloud2 {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    background-color: #B4E4FF;
+    width: 200px;
+}
+
+.uppercloud1 {
+    width: 200px;
+    position: absolute;
+    right: 170px;
+    top: 250px;
+}
+
+.name {
+    padding: 70px;
+}
+.mountain {
+    background-color: #B4E4FF;
+    width: 70%;
+    margin-top: 90px;
+}
+.skill1pic {
+    width: 30%;
+    float: left;
+    padding-right: 30px;
+}
+
+.profilephoto {
+    width: 250px;
+    padding-top: 20px;
+}
+
+.middle-container {
+    background-color: #FEFAE0;
+}
+.skill2pic {
+    width: 30%;
+    float: right;
+    padding-left: 30px;
+    
+}
+.skill-row {
+    width: 50%;
+    margin: 130px auto;
+    text-align: left;
+}
+.skills{
+    height: 800px;
+}
+.profile {
+    height: 600px;
+}
