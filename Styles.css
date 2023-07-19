@@ -53,6 +53,8 @@ h3 {
     background-color: #B4E4FF;
     width: 70%;
     margin-top: 90px;
+    position: relative;
+    top: 3px;
 }
 .skill1pic {
     width: 30%;
