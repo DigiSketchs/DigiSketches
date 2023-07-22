@@ -5,12 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigiSketches</title>
     <link rel="icon" href="anirudh-modified.ico">
-    <link rel="stylesheet" href="Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap" rel="Stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DigiSketchs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://digisketchs.github.io/DigiSketches/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/_.anirudha/">instagram</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Skills
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://drive.google.com/file/d/17q3fYrjZHJTwnHFOYkUU10Mj9kpdj7Q4/view?usp=drive_link">Pencil Sketchs</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/the_artopolis_/">E-invites</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/digisketches_/">DigiSketchs Instagram</a></li>
+              </ul>
+            </li>
+           
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 </head>
+
 <body>
+  <style>body {
+    text-align: center;
+    margin: 0;
+    font-family: 'merriweather' ,serif;
+}
+h1 {
+    color: #1D5B79;
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    margin-top: 70px ;
+
+}
+
+hr {
+    border-style: dotted dotted none dotted;
+    width: 5%;
+    border-width: 5px;
+    margin: 100px auto;
+}
+
+
+h2 {
+    color: #1D5B79;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: 'merriweather' ,serif;
+}
+.upper-container {
+    background-color: #B4E4FF; 
+}
+
+.uppercloud2 {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    background-color: #B4E4FF;
+    width: 200px;
+}
+
+.uppercloud1 {
+    width: 200px;
+    position: absolute;
+    right: 170px;
+    top: 250px;
+}
+
+.name {
+    padding: 70px;
+}
+.mountain {
+    
+    width: 70%;
+    margin-top: 90px;
+    position: relative;
+    top: 3px;
+}
+.skill1pic {
+    width: 30%;
+    float: left;
+    padding-right: 30px;
+}
+
+.middle-container {
+    background-color: #FEFAE0;
+}
+.skill2pic {
+    width: 30%;
+    float: right;
+    padding-left: 30px;
+    
+}
+.skill-row {
+    width: 50%;
+    margin: 200px auto;
+    text-align: left;
+}
+.skills{
+    height: 900px;
+}
+.profile {
+    height: 800px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    z-index: 1;
+    text-decoration: none;
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+   }
+   
+   .button:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+   }
+   
+   .button:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+   
+   .button:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+   }
+  
+  
+
+  .bottom-container {
+    background-color:#B4E4FF;
+    height: 300px;
+
+  }
+  .margin {
+    margin: 0 auto
+    
+  }
+
+  .footer-link{
+    margin: 50px 0 ;
+  }
+  .contact-me {
+    height: 350px;
+  }
+  .contact-me1 {
+    padding-bottom: 50px;
+  }
+
+  .profilephoto {
+    width: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .contact-me2 {
+    padding-top: 50px;
+  }
+.footer-link {
+    text-decoration: none;
+
+    padding: 0 20px;
+    display: inline-block;
+
+}
+.footer-link:hover {
+      color: #FEFAE0;
+}
+
+.Digi {
+    margin-top: 100px;
+    font-size: smaller;
+}</style>
     <div class="upper-container">
         <img class="uppercloud1" src="—Pngtree—irregular clouds clip art_5568103 (1).png" alt="cloud-image">
         <div class="name">
@@ -56,7 +284,7 @@
           <h2>Get In Touch</h2>
           <h3 class="contact-me2">Feel free to reach out, let's connect and engage,</h3>
           <h3 class="contact-me1">Contact me for inquiries or any information you wish to gauge.</h3>
-          <a class="btn" href="mailto:anirudhadarokar111@gmail.com">CONTACT ME</a>
+          <a class="button" href="mailto:anirudhadarokar111@gmail.com">CONTACT ME</a>
         </div>
       </div>
     <div class="bottom-container">
